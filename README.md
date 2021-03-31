@@ -1,12 +1,12 @@
-#Status
+Status
 
 --How to install--
 1. To get the function working, stop the server, then paste 	"Status.zip" in the "datapacks" folder of your world. 
-	(On servers, don't paste it in the "world_nether" or "world_the_end", only in the "world" file)
+	 (On servers, don't paste it in the "world_nether" or "world_the_end", only in the "world" file)
 2. Start the Server. 
 3. If not done already, run
-	"/datapack enable "file/Status.zip"
-	If there is no chat message in the chat, please run "/function firstuse:firststart"
+	 "/datapack enable "file/Status.zip"
+	 If there is no chat message in the chat, please run "/function firstuse:firststart"
 
 Now you should get a message in the Chat.
 The setup is complete.
@@ -20,7 +20,7 @@ Basics:
 /trigger Status for the Team-Menu
 
 
-Teams:
+(Teams:
 /trigger Status set 5   for AFK
 /trigger Status set 6   for Build
 /trigger Status set 69  for Cute
@@ -31,7 +31,7 @@ Teams:
 /trigger Status set 11  for NoNether
 /trigger Status set 12  for Rec
 /trigger Status set 13  for Redstone
-/trigger Status set 14  for RP 
+/trigger Status set 14  for RP)
 
 /trigger Status set 100  to clear your Status
 
@@ -51,7 +51,7 @@ Admin Stuff:
 There isn't much to say here, but i'll explain what all the scoreboards do. Maybe you'll find some Eastereggs :^)
 
 Scoreboards:
-Status: A trigger for the team stuff, 1337
+Status: A trigger for the team stuff
 StatusKeep : A trigger for keeping the function
 StatusRemove: A trigger for removing the function
 StatusTime: Adds every tick one for every player, I use it to message every player new to the function
@@ -60,6 +60,10 @@ StatusHelp: A trigger for the Help and Credits menu
 StatusAnimated2: Stores the information for who wants a animated Status
 StatusAnimated: A trigger to toggle animated Status
 StatusWelcome: This will look for a player to join, and say the message "Welcome Back! Your Status is..."
+
+
+
+
 
 
 <-- Here is line 69 :^)
