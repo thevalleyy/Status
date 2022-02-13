@@ -1,4 +1,4 @@
-|***Status***|
+***Status***
 
 __How to install__
 1. To get the function working, stop the server, then paste "Status.zip" in the "datapacks" folder of your world. 
