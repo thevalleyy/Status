@@ -50,15 +50,15 @@ There isn't much to say here, but i'll explain what all the scoreboards do. Mayb
 
 
 __Scoreboards:__
-Status: A trigger for the team stuff
-StatusKeep : A trigger for keeping the function
-StatusRemove: A trigger for removing the function
-StatusTime: Adds every tick one for every player, I use it to message every player new to the function
-StatusAnimation: A dummy for the animated Teams
-StatusHelp: A trigger for the Help and Credits menu
-StatusAnimated2: Stores the information for who wants a animated Status
-StatusAnimated: A trigger to toggle animated Status
-StatusWelcome: This will look for a player to join, and say the message "Welcome Back! Your Status is..."
+- Status: A trigger for the team stuff
+- StatusKeep : A trigger for keeping the function
+- StatusRemove: A trigger for removing the function
+- StatusTime: Adds every tick one for every player, I use it to message every player new to the function
+- StatusAnimation: A dummy for the animated Teams
+- StatusHelp: A trigger for the Help and Credits menu
+- StatusAnimated2: Stores the information for who wants a animated Status
+- StatusAnimated: A trigger to toggle animated Status
+- StatusWelcome: This will look for a player to join, and say the message "Welcome Back! Your Status is..."
 
 
 __Credits__
