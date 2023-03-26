@@ -1,82 +1,147 @@
-***Status***
 
-__How to install__
-1. To get the function working, stop the server, then paste "Status.zip" in the "datapacks" folder of your world. 
-	(On servers, don't paste it in the "world_nether" or "world_the_end", only in the "world" file)
-2. Start the Server. 
-3. If not done already, run
-	"/datapack enable "file/Status.zip"
-	If there is no chat message in the chat, please run "/function firstuse:firststart"
+# The Status Datapack
 
-Now you should get a message in the Chat.
-The setup is complete, let's get to the commands.
+A datapack to set suffixes in the tablist. Just because why not?
 
 
-__Commands__
-_Basics:_
-- /trigger StatusHelp for the Help-Menu
-- /trigger StatusHelp set 2 for the Credits
-- /trigger Status for the Team-Menu
+## Screenshots
 
-
-_Teams:_
-- /trigger Status set 5   for AFK 
-- /trigger Status set 6   for Build 
-- /trigger Status set 69  for Cute 
-- /trigger Status set 7   for Discord 
-- /trigger Status set 8   for Discovering... 
-- /trigger Status set 9   for Farm 
-- /trigger Status set 10  for Live 
-- /trigger Status set 11  for NoNether 
-- /trigger Status set 12  for Rec 
-- /trigger Status set 13  for Redstone 
-- /trigger Status set 14  for RP) 
-
-- /trigger Status set 100  to clear your Status
-
-- /trigger StatusAnimated set 1  to use animated Status
-- /trigger StatusAnimated set 2  to not use animated Status
-
-
-_Admin Stuff:_
-- /function setup:reinstall  to reset all data and reboot the function
-- /function setup:remove  for the "Remove-Menu"
-	- /trigger StatusKeep  doesn't remove the data
-	- /trigger StatusRemove  deletes all data (Scores/Scoreboards/Teams)
-
-
-__Tips:__
-There isn't much to say here, but i'll explain what all the scoreboards do. Maybe you'll find some Eastereggs :^)
-
-
-__Scoreboards:__
-- Status: A trigger for the team stuff
-- StatusKeep : A trigger for keeping the function
-- StatusRemove: A trigger for removing the function
-- StatusTime: Adds every tick one for every player, I use it to message every player new to the function
-- StatusAnimation: A dummy for the animated Teams
-- StatusHelp: A trigger for the Help and Credits menu
-- StatusAnimated2: Stores the information for who wants a animated Status
-- StatusAnimated: A trigger to toggle animated Status
-- StatusWelcome: This will look for a player to join, and say the message "Welcome Back! Your Status is..."
-
-
-__Credits__
-- datapack by: thevalleyy
-	- https://www.youtube.com/channel/UCAAHDguTiSsomnRcAqIb2dA
-- tellraws made with:
-	- https://minecraft.tools/en/tellraw.php
-- halo made with:
-	- https://github.com/kemo14331/Particle-Converter
-- Idea from: CraftAttack Status Plugin
+Modded Multiplayer         |  Vanilla Singleplayer    |
+:-------------------------:|:-------------------------:
+<img src="https://i.imgur.com/mE8ryop.png" width="600" />  |  <img src="https://i.imgur.com/TKGkYHa.png" width="600" /> |
 
 
 
-__Help__
-If you have any kind of problems with the datapack,
-feel free to write an issue on GitHub.
+## Features
+
+- Lightweight
+- No configuration
+- Animated suffixes
+- Visible to everyone
+- Runs on every vanilla based server and singleplayer
 
 
+## Installation
+1. Stop the server
+2. Paste `Status.zip` in the `datapacks` folder of your world in `/saves`\
+    On servers, just paste it in the `world` directory
+3. Start the Server
+4. Enable it by typing `/datapack enable "file/Status.zip"`\
+    If there nothing happens, run `/function firstuse:firststart`
 
 
-~thevalleyy
+## Examples
+
+Let's say, I want to set the 'cute' status without animations.
+```mcfunction
+trigger Status set 69
+trigger StatusAnimated set 1
+```
+Now, I want to completely disable the animation.
+```mcfunction
+trigger StatusAnimated set 2
+```
+Ok, how about clearing the status?
+```mcfunction
+trigger Status set 100
+```
+
+#### Note: all this can be done easily on the status panel (`/trigger Status`)
+
+## Commands
+
+#### Basics
+*All of these commands can be accessed by anyone, using the status menu or the chat.*
+
+| Command   | Description  |           
+| :--------|:------------- |
+| `/trigger StatusHelp` | Shows the **help menu** |
+| `/trigger Statushelp set 2` | **Credits** |
+| `/trigger Status` | Shows the **status menu** |
+
+
+#### Teams
+*These are the team ids, which can be inserted in the command below, to set your suffix.*
+```mcfunction
+  trigger Status set <ID>
+```
+
+|ID      | Suffix   | Animated  | Color
+| :------| :------| :-------- | :--- |
+| `5`    | `AFK` | ❌ | `gray` |
+| `6`    | `Build` | ❌ | `aqua` |
+| `69`    | `Cute` | ✅ | `light_purple` |
+| `7`    | `Discord` | ❌ | `blue` |
+| `8`    | `Discovering...` | ✅ | `dark_green` |
+| `9`    | `Farm` | ❌ | `gold` |
+| `10`    | `Live` | ❌ | `dark_purple` |
+| `11`    | `NoNether` | ❌ | `dark_red` |
+| `12`    | `Rec` | ❌ | `red` |
+| `13`    | `Redstone` | ✅ | `red` |
+| `14`    | `RP` | ✅ | `yellow` |
+
+
+#### Utility
+`/trigger Status set 100` to clear your status\
+`/trigger StatusAnimated set 1` to allow animations\
+`/trigger StatusAnimated set 2` to disable animations
+
+#### Admin
+*These are commands, only admins can access*
+
+`/function setup:reinstall` hard resets all data and reboots the datapack
+`/function setup:remove` reveals the remove-panel\
+    1. Option: `/trigger StatusKeep` aborts the process\
+    2. Option: `/trigger StatusRemove` deletes **everything** (almost)
+
+To completely disable the datapack, run the commands above, then proceed with `/schedule clear firstuse:timefunc` to unload the schedule and `/datapack disable "file/Status.zip"` to disable autostart on reload.
+
+#### Scoreboards
+*The datapack needs some scoreboards, which are crucial to ensure funcionality and reliability*
+
+|Scoreboard      | Function   | Trigger   |
+| :------        | :------    | :-------- |
+| `Status` | Manages the status requests | ✅ |
+| `StatusKeep` | Only accessable after `/function setup:remove` | ✅ |
+| `StatusRemove` | Only accessable after `/function setup:remove` | ✅ |
+| `StatusTime` | Greets every player new to the datapack. Also a little playtime counter | ❌ |
+| `StatusAnimation` | Manages animation frames | ❌ |
+| `StatusHelp` | Help and credits menu | ✅ |
+| `StatusAnimated2` | Stores information about who is using animations | ❌ |
+| `StatusAnimated` | Toggle for animations | ✅ |
+| `StatusWelcome` | Welcome back message | ❌ |
+
+
+## Support / Feature request
+
+Feel free to create an [issue](https://github.com/thevalleyy/Status/issues/new) over here on github.
+
+
+## To Do
+
+- Unify the chat prefix
+- Add dynamic status panel
+- Add more animations
+- Fix playerjoin bug
+- Rewrite `readme.txt`
+
+## Known Bugs
+
+- The first-time welcome message gets sent to everybody on the server, when a player new to the datapack joins
+- The formatting of some messages is not unified
+
+## Authors
+
+- [thevalleyy](https://github.com/thevalleyy)
+
+
+## Acknowledgements
+
+ - [/tellraw editor](https://minecraft.tools/en/tellraw.php)
+ - [Partice-Converter](https://github.com/kemo14331/Particle-Converter)
+ - Inspired by: CraftAttack Status Plugin
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
