@@ -27,7 +27,7 @@ Modded Multiplayer         |  Vanilla Singleplayer    |
     On servers, just paste it in the `world` directory
 3. Start the Server
 4. Enable it by typing `/datapack enable "file/Status.zip"`\
-    If there nothing happens, run `/function firstuse:firststart`
+    If nothing happens, run `/function firstuse:firststart`
 
 
 ## Examples
