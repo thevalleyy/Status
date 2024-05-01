@@ -90,7 +90,7 @@ trigger Status set 100
 *These are commands, only admins can access*
 
 `/function setup:reinstall` hard resets all data and reboots the datapack
-`/function setup:remove` reveals the remove-panel\
+<br>`/function setup:remove` reveals the remove-panel\
     1. Option: `/trigger StatusKeep` aborts the process\
     2. Option: `/trigger StatusRemove` deletes **everything** (almost)
 
