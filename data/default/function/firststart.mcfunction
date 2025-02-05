@@ -76,4 +76,8 @@ team modify StatusPvp suffix [{"text":"  >>  ", "color": "gray"},  {"text":"PvP"
 team add StatusEvent
 team modify StatusEvent suffix [{"text":"  >>  ", "color": "gray"},  {"text":"Event", "color":"light_purple"}]
 
+# sus
+team add StatusSus
+team modify StatusSus suffix [{"text":"  >>  ", "color": "gray"},  {"text":"Sus", "color":"dark_blue"}]
+
 function default:tick
