@@ -275,7 +275,7 @@ execute at @a[team=StatusCute,scores={StatusAnimated2=1},gamemode=!spectator,nbt
 #### WELCOME BACK ####
 tellraw @a[team=StatusAfk,scores={StatusWelcome=1..}] [{"text":"[","color":"gray"},{"text":"Status","color":"gold"},{"text":"]: ","color":"gray"},{"text":"Welcome Back! Your Status is ","color":"gray"},{"text":"AFK","color":"gray"}]
 
-tellraw @a[team=StatusBuilding,scores={StatusWelcome=1..}] [{"text":"[","color":"gray"},{"text":"Status","color":"gold"},{"text":"]: ","color":"gray"},{"text":"Welcome Back! Your Status is ","color":"gray"},{"text":"AFK","color":"aqua"}]
+tellraw @a[team=StatusBuilding,scores={StatusWelcome=1..}] [{"text":"[","color":"gray"},{"text":"Status","color":"gold"},{"text":"]: ","color":"gray"},{"text":"Welcome Back! Your Status is ","color":"gray"},{"text":"Building","color":"aqua"}]
 
 tellraw @a[team=StatusCute,scores={StatusWelcome=1..}] [{"text":"[","color":"gray"},{"text":"Status","color":"gold"},{"text":"]: ","color":"gray"},{"text":"Welcome Back! Your Status is ","color":"gray"},{"text":"Cute","color":"light_purple"}]
 
