@@ -1,12 +1,26 @@
+[![GitHub release](https://img.shields.io/github/v/release/thevalleyy/Status?label=latest%20release&style=flat-square)](https://github.com/thevalleyy/Status/releases/latest)
+
 # Status
 
-A minecraft datapack to set suffixes in the tablist. Just because why not?
+A minecraft datapack to set suffixes in the tablist. Just because, why not?
+<br>⚠ **Compatible with 1.21 and above** ⚠
 
 ## Screenshots
 
 |                        Multiplayer                        |                       Singleplayer                        |
 | :-------------------------------------------------------: | :-------------------------------------------------------: |
-| <img src="https://i.imgur.com/iHdhl7S.png" width="700" /> | <img src="https://i.imgur.com/aX2v8li.png" width="700" /> |
+| <img src="https://i.imgur.com/iHdhl7S.png" width="600" /> | <img src="https://i.imgur.com/aX2v8li.png" width="600" /> |
+
+## Table of contents
+
+-   [Features](#features)
+-   [Installation](#installation)
+-   [Usage](#usage)
+-   [Uninstallation](#uninstallation)
+-   [Support / Feature request](#support--feature-request)
+-   [Authors](#authors)
+-   [Acknowledgements](#acknowledgements)
+-   [License](#license)
 
 ## Features
 
@@ -19,118 +33,83 @@ A minecraft datapack to set suffixes in the tablist. Just because why not?
 ## Installation
 
 1. Stop the server
-2. Paste `Status.zip` in the `datapacks` folder of your world in `/saves`\
-   On servers, just paste it in the `world` directory
-3. Start the Server
-4. Enable it by typing `/datapack enable "file/Status.zip"`\
-   If nothing happens, run `/function firstuse:firststart`
+2. Download [the latest `Status.zip`](https://github.com/thevalleyy/Status/releases/latest/download/Status.zip)
+3. Paste it in `world/datapacks` or `saves/<world>/datapacks`
+4. Start the server
+5. Enable it by typing `/datapack enable "file/Status.zip"`\
+   If nothing happens, run `/function default:firststart`
 
-## Examples
+If there are any problems, feel free to create an [issue](https://github.com/thevalleyy/Status/issues/new).
 
-Let's say, I want to set the 'cute' status without animations.
-
-```mcfunction
-trigger Status set 69
-trigger StatusAnimated set 1
-```
-
-Now, I want to completely disable the animation.
-
-```mcfunction
-trigger StatusAnimated set 2
-```
-
-Ok, how about clearing the status?
-
-```mcfunction
-trigger Status set 100
-```
-
-#### Note: all this can be done easily on the status panel (`/trigger Status`)
-
-## Commands
+## Usage
 
 #### Basics
 
-_All of these commands can be accessed by anyone, using the status menu or the chat._
+_All of these commands can be accessed by anyone using the status menu or the chat._
 
-| Command                     | Description               |
-| :-------------------------- | :------------------------ |
-| `/trigger StatusHelp`       | Shows the **help menu**   |
-| `/trigger Statushelp set 2` | **Credits**               |
-| `/trigger Status`           | Shows the **status menu** |
+| Command                     | Displays           |
+| :-------------------------- | :----------------- |
+| `/trigger Status`           | **status panel**   |
+| `/trigger StatusAnimated`   | **animation menu** |
+| `/trigger StatusHelp`       | **help menu**      |
+| `/trigger Statushelp set 2` | **credits**        |
 
 #### Teams
 
-_These are the team ids, which can be inserted in the command below, to set your suffix._
+To join a team, either click it on the status panel or use the command below.
 
 ```mcfunction
   trigger Status set <ID>
 ```
 
-| ID   | Suffix           | Animated | Color          |
-| :--- | :--------------- | :------- | :------------- |
-| `5`  | `AFK`            | ❌       | `gray`         |
-| `6`  | `Build`          | ❌       | `aqua`         |
-| `69` | `Cute`           | ✅       | `light_purple` |
-| `7`  | `Discord`        | ❌       | `blue`         |
-| `8`  | `Discovering...` | ✅       | `dark_green`   |
-| `9`  | `Farm`           | ❌       | `gold`         |
-| `10` | `Live`           | ❌       | `dark_purple`  |
-| `11` | `NoNether`       | ❌       | `dark_red`     |
-| `12` | `Rec`            | ❌       | `red`          |
-| `13` | `Redstone`       | ✅       | `red`          |
-| `14` | `RP`             | ✅       | `yellow`       |
+| ID   | Suffix        | Animated | Color          |
+| :--- | :------------ | :------- | :------------- |
+| `5`  | `AFK`         | ❌       | `gray`         |
+| `6`  | `Building`    | ❌       | `aqua`         |
+| `7`  | `Cute`        | ✅       | `light_purple` |
+| `8`  | `Discord`     | ❌       | `blue`         |
+| `9`  | `Discovering` | ✅       | `dark_green`   |
+| `10` | `Event`       | ❌       | `light_purple` |
+| `11` | `Farming`     | ❌       | `gold`         |
+| `12` | `NoNether`    | ❌       | `dark_red`     |
+| `13` | `PvP`         | ❌       | `dark_red`     |
+| `14` | `Recording`   | ❌       | `red`          |
+| `15` | `Redstone`    | ✅       | `red`          |
+| `16` | `RP`          | ❌       | `yellow`       |
+| `17` | `Streaming`   | ❌       | `dark_purple`  |
+| `18` | `Sus`         | ❌       | `dark_aqua`    |
 
-#### Utility
+To clear your status, run `/trigger Status set 100`
 
-`/trigger Status set 100` to clear your status\
-`/trigger StatusAnimated set 1` to allow animations\
-`/trigger StatusAnimated set 2` to disable animations
+#### Animation
+
+You can manage animations by selecting your preference in the animation menu.
+
+```mcfunction
+  trigger StatusAnimated
+```
 
 #### Admin
 
-_These are commands, only admins can access_
+_These commands can only be opped players_
 
-`/function setup:reinstall` hard resets all data and reboots the datapack
-<br>`/function setup:remove` reveals the remove-panel\
+-   `/function setup:reinstall` resets all data and reboots the datapack
+-   `/function setup:remove`
+    -   `/trigger StatusKeep` aborts the process
+    -   `/trigger StatusRemove` deletes **everything**
 
-1.  Option: `/trigger StatusKeep` aborts the process\
-2.  Option: `/trigger StatusRemove` deletes **everything** (almost)
+To completely disable the datapack, run `/datapack disable "file/Status.zip"` to disable autostart on reload.
 
-To completely disable the datapack, run the commands above, then proceed with `/schedule clear firstuse:timefunc` to unload the schedule and `/datapack disable "file/Status.zip"` to disable autostart on reload.
+## Uninstallation
 
-#### Scoreboards
-
-_The datapack needs some scoreboards, which are crucial to ensure funcionality and reliability_
-
-| Scoreboard        | Function                                                                | Trigger |
-| :---------------- | :---------------------------------------------------------------------- | :------ |
-| `Status`          | Manages the status requests                                             | ✅      |
-| `StatusKeep`      | Only accessable after `/function setup:remove`                          | ✅      |
-| `StatusRemove`    | Only accessable after `/function setup:remove`                          | ✅      |
-| `StatusTime`      | Greets every player new to the datapack. Also a little playtime counter | ❌      |
-| `StatusAnimation` | Manages animation frames                                                | ❌      |
-| `StatusHelp`      | Help and credits menu                                                   | ✅      |
-| `StatusAnimated2` | Stores information about who is using animations                        | ❌      |
-| `StatusAnimated`  | Toggle for animations                                                   | ✅      |
-| `StatusWelcome`   | Welcome back message                                                    | ❌      |
+1. Run `/function setup:remove`
+2. To confirm run `/trigger StatusRemove`
+3. Run `/datapack disable "file/Status.zip"`
+4. Delete the `Status.zip` from the datapacks folder (optional)
 
 ## Support / Feature request
 
 Feel free to create an [issue](https://github.com/thevalleyy/Status/issues/new) over here on github.
-
-## To Do
-
--   Rewrite Readme
--   Update pages
--   Add more animated suffixes
--   pack.png
-
-## Known Bugs
-
--   The first-time welcome message gets sent to everybody on the server, when a player new to the datapack joins
--   The formatting of some messages is not unified
 
 ## Authors
 
@@ -138,10 +117,9 @@ Feel free to create an [issue](https://github.com/thevalleyy/Status/issues/new) 
 
 ## Acknowledgements
 
--   [/tellraw editor](https://minecraft.tools/en/tellraw.php)
 -   [Partice-Converter](https://github.com/kemo14331/Particle-Converter)
 -   Inspired by: CraftAttack Status Plugin
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+-   [GNU GPL v3.0](https://www.gnu.org/licenses/lgpl-3.0.txt)
