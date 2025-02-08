@@ -1,14 +1,12 @@
-# ⚠ This readme is outdated and will be updated soon ⚠
+# Status
 
-# The Status Datapack
-
-A datapack to set suffixes in the tablist. Just because why not?
+A minecraft datapack to set suffixes in the tablist. Just because why not?
 
 ## Screenshots
 
-|                    Modded Multiplayer                     |                   Vanilla Singleplayer                    |
+|                        Multiplayer                        |                       Singleplayer                        |
 | :-------------------------------------------------------: | :-------------------------------------------------------: |
-| <img src="https://i.imgur.com/mE8ryop.png" width="600" /> | <img src="https://i.imgur.com/TKGkYHa.png" width="600" /> |
+| <img src="https://i.imgur.com/iHdhl7S.png" width="700" /> | <img src="https://i.imgur.com/aX2v8li.png" width="700" /> |
 
 ## Features
 
