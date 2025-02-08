@@ -1,7 +1,7 @@
 # /function setup:reinstall was executed
 
 # Titles the progress
-title @s actionbar [{"text":"[","color":"gray"},{"text":"Status","color":"gold"},{"text":"]: ","color":"gray"},{"text":"Reinstalling everything","color":"gray"}]
+tellraw @s [{"text":"[","color":"gray"},{"text":"Status","color":"gold"},{"text":"]: ","color":"gray"},{"text":"Reinstalling everything","color":"gray"}]
 
 # Removes all scoreboards and teams
 scoreboard objectives remove StatusHelp
@@ -37,4 +37,4 @@ schedule clear default:tick
 function default:firststart
 
 # done
-title @s actionbar [{"text":"[","color":"gray"},{"text":"Status","color":"gold"},{"text":"]: ","color":"gray"},{"text":"Reinstall was completed successfully!","color":"green"}]
+tellraw @s [{"text":"[","color":"gray"},{"text":"Status","color":"gold"},{"text":"]: ","color":"gray"},{"text":"Reinstall was completed successfully!","color":"green"}]
