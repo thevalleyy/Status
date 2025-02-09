@@ -1,9 +1,11 @@
-[![GitHub release](https://img.shields.io/github/v/release/thevalleyy/Status?label=latest%20release&style=flat-square)](https://github.com/thevalleyy/Status/releases/latest)
+[![GitHub release](https://img.shields.io/github/v/release/thevalleyy/Status?label=latest%20release)](https://github.com/thevalleyy/Status/releases/latest)
+[![GitHub issues](https://img.shields.io/github/issues/thevalleyy/Status.svg)](https://GitHub.com/thevalleyy/Status/issues/)
+[![GitHub license](https://img.shields.io/github/license/thevalleyy/Status.svg)](https://github.com/thevalleyy/Status/blob/master/LICENSE)
 
 # Status
 
-A minecraft datapack to set suffixes in the tablist. Just because, why not?
-<br>⚠ **Compatible with 1.21 and above** ⚠
+A Minecraft datapack which adds a suffix to your name in the tablist. Just because, why not?
+<br>⚠ **Compatible with 1.21 and above**
 
 ## Screenshots
 
@@ -25,27 +27,27 @@ A minecraft datapack to set suffixes in the tablist. Just because, why not?
 ## Features
 
 -   Lightweight
--   No configuration
+-   No configuration needed
 -   Animated suffixes
 -   Visible to everyone
--   Runs on every vanilla based server and singleplayer
+-   Runs on every vanilla based server and in singleplayer
 
 ## Installation
 
 1. Stop the server
-2. Download [the latest `Status.zip`](https://github.com/thevalleyy/Status/releases/latest/download/Status.zip)
+2. Download the latest [`Status.zip`](https://github.com/thevalleyy/Status/releases/latest/download/Status.zip)
 3. Paste it in `world/datapacks` or `saves/<world>/datapacks`
 4. Start the server
 5. Enable it by typing `/datapack enable "file/Status.zip"`\
    If nothing happens, run `/function default:firststart`
 
-If there are any problems, feel free to create an [issue](https://github.com/thevalleyy/Status/issues/new).
+If there are any problems, create an [issue](https://github.com/thevalleyy/Status/issues/new).
 
 ## Usage
 
 #### Basics
 
-_All of these commands can be accessed by anyone using the status menu or the chat._
+_All of these commands can be accessed by anyone using the status panel or the chat._
 
 | Command                     | Displays           |
 | :-------------------------- | :----------------- |
@@ -91,7 +93,7 @@ You can manage animations by selecting your preference in the animation menu.
 
 #### Admin
 
-_These commands can only be used by opped players_
+_These commands can only be used by players with operator status._
 
 -   `/function setup:reinstall` resets all data and reboots the datapack
 -   `/function setup:remove`
@@ -109,7 +111,7 @@ To completely disable the datapack, run `/datapack disable "file/Status.zip"` to
 
 ## Support / Feature request
 
-Feel free to create an [issue](https://github.com/thevalleyy/Status/issues/new) over here on github.
+Feel free to create an [issue](https://github.com/thevalleyy/Status/issues/new) over here on GitHub.
 
 ## Authors
 
