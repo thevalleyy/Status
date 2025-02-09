@@ -62,22 +62,22 @@ To join a team, either click it on the status panel or use the command below.
   trigger Status set <ID>
 ```
 
-| ID   | Suffix        | Animated | Color          |
-| :--- | :------------ | :------- | :------------- |
-| `5`  | `AFK`         | ❌       | `gray`         |
-| `6`  | `Building`    | ❌       | `aqua`         |
-| `7`  | `Cute`        | ✅       | `light_purple` |
-| `8`  | `Discord`     | ❌       | `blue`         |
-| `9`  | `Discovering` | ✅       | `dark_green`   |
-| `10` | `Event`       | ❌       | `light_purple` |
-| `11` | `Farming`     | ❌       | `gold`         |
-| `12` | `NoNether`    | ❌       | `dark_red`     |
-| `13` | `PvP`         | ❌       | `dark_red`     |
-| `14` | `Recording`   | ❌       | `red`          |
-| `15` | `Redstone`    | ✅       | `red`          |
-| `16` | `RP`          | ❌       | `yellow`       |
-| `17` | `Streaming`   | ❌       | `dark_purple`  |
-| `18` | `Sus`         | ❌       | `dark_aqua`    |
+| ID   | Suffix           | Animated | Color          |
+| :--- | :--------------- | :------- | :------------- |
+| `5`  | `AFK`            | ❌       | `gray`         |
+| `6`  | `Building`       | ❌       | `aqua`         |
+| `7`  | `Cute`           | ✅       | `light_purple` |
+| `8`  | `Discord`        | ❌       | `blue`         |
+| `9`  | `Discovering...` | ✅       | `dark_green`   |
+| `10` | `Event`          | ❌       | `light_purple` |
+| `11` | `Farming`        | ❌       | `gold`         |
+| `12` | `NoNether`       | ❌       | `dark_red`     |
+| `13` | `PvP`            | ❌       | `dark_red`     |
+| `14` | `Recording`      | ❌       | `red`          |
+| `15` | `Redstone`       | ✅       | `red`          |
+| `16` | `RP`             | ❌       | `yellow`       |
+| `17` | `Streaming`      | ❌       | `dark_purple`  |
+| `18` | `SUS`            | ❌       | `dark_aqua`    |
 
 To clear your status, run `/trigger Status set 100`
 
@@ -91,7 +91,7 @@ You can manage animations by selecting your preference in the animation menu.
 
 #### Admin
 
-_These commands can only be opped players_
+_These commands can only be used by opped players_
 
 -   `/function setup:reinstall` resets all data and reboots the datapack
 -   `/function setup:remove`
