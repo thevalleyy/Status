@@ -9,9 +9,9 @@ A Minecraft datapack which adds a suffix to your name in the tablist. Just becau
 
 ## Screenshots
 
-|                        Multiplayer                        |                       Singleplayer                        |
-| :-------------------------------------------------------: | :-------------------------------------------------------: |
-| <img src="https://i.imgur.com/iHdhl7S.png" width="600" /> | <img src="https://i.imgur.com/aX2v8li.png" width="600" /> |
+|                        Multiplayer                         |                        Singleplayer                        |
+| :--------------------------------------------------------: | :--------------------------------------------------------: |
+| <img src="https://i.imgur.com/iHdhl7S.png" width="100%" /> | <img src="https://i.imgur.com/aX2v8li.png" width="100%" /> |
 
 ## Table of contents
 
@@ -34,7 +34,7 @@ A Minecraft datapack which adds a suffix to your name in the tablist. Just becau
 
 ## Installation
 
-1. Stop the server
+1. Stop the server or
 2. Download the latest [`Status.zip`](https://github.com/thevalleyy/Status/releases/latest/download/Status.zip)
 3. Paste it in `world/datapacks` or `saves/<world>/datapacks`
 4. Start the server
