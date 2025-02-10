@@ -5,7 +5,9 @@
 # Status
 
 A Minecraft datapack which adds a suffix to your name in the tablist. Just because, why not?
-<br>⚠ **Compatible with 1.21 and above**
+<br>⚠ **v2.2 Compatible with 1.21 and above**
+
+### Download Status on [modrinth](https://modrinth.com/datapack/statusdatapack)
 
 ## Screenshots
 
