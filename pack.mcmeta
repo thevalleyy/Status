@@ -1,7 +1,7 @@
 {
     "pack": {
         "description": "§6Status by thevalleyy. §7View on GitHub at https://github.com/thevalleyy/Status",
-        "pack_format": 48,
-        "supported_formats": [48, 61]
+        "pack_format": 71,
+        "supported_formats": [48, 71]
     }
 }
