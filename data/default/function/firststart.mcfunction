@@ -76,6 +76,18 @@ team modify StatusStreaming suffix [{"text":" » ", "color": "gray"},  {"text":"
 team add StatusSus
 team modify StatusSus suffix [{"text":" » ", "color": "gray"},  {"text":"SUS", "color":"dark_aqua"}]
 
+# vibing
+team add StatusVibing
+team modify StatusVibing suffix [{"text":" » ", "color": "gray"},  {"text":"Vibing", "color":"dark_green"}]
+
+# fishing
+team add StatusFishing
+team modify StatusFishing suffix [{"text":" » ", "color": "gray"},  {"text":"Fishing", "color":"dark_aqua"}]
+
+# mapping
+team add StatusMapping
+team modify StatusMapping suffix [{"text":" » ", "color": "gray"},  {"text":"Mapping", "color":"green"}]
+
 function default:tick
 
 # 05 AFK         gray 
@@ -92,3 +104,6 @@ function default:tick
 # 16 RP          yellow
 # 17 Streaming   dark_purple
 # 18 Sus         dark_aqua
+# 19 Vibing      dark_green
+# 20 Fishing     dark_aqua
+# 21 Mapping     green

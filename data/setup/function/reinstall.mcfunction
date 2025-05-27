@@ -27,6 +27,9 @@ team remove StatusRedstone
 team remove StatusRp
 team remove StatusStreaming
 team remove StatusSus
+team remove StatusVibing
+team remove StatusFishing
+team remove StatusMapping
 
 scoreboard objectives remove StatusRemove
 scoreboard objectives remove StatusKeep
