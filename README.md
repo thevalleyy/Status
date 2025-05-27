@@ -65,22 +65,25 @@ To join a team, either click it on the status panel or use the command below.
   trigger Status set <ID>
 ```
 
-| ID   | Suffix           | Animated | Color          |
-| :--- | :--------------- | :------- | :------------- |
-| `5`  | `AFK`            | ❌       | `gray`         |
-| `6`  | `Building`       | ❌       | `aqua`         |
-| `7`  | `Cute`           | ✅       | `light_purple` |
-| `8`  | `Discord`        | ❌       | `blue`         |
-| `9`  | `Discovering...` | ✅       | `dark_green`   |
-| `10` | `Event`          | ❌       | `light_purple` |
-| `11` | `Farming`        | ❌       | `gold`         |
-| `12` | `NoNether`       | ❌       | `dark_red`     |
-| `13` | `PvP`            | ❌       | `dark_red`     |
-| `14` | `Recording`      | ❌       | `red`          |
-| `15` | `Redstone`       | ✅       | `red`          |
-| `16` | `RP`             | ❌       | `yellow`       |
-| `17` | `Streaming`      | ❌       | `dark_purple`  |
-| `18` | `SUS`            | ❌       | `dark_aqua`    |
+| ID   | Suffix           | Animated | Color                                                                                                          | XXX |
+| :--- | :--------------- | :------- | :------------------------------------------------------------------------------------------------------------- | --- |
+| `5`  | `AFK`            | ❌       | ![gray](https://img.shields.io/badge/-%20%20%20%20-AAAAAA?labelColor=AAAAAA&color=AAAAAA) gray                 |
+| `6`  | `Building`       | ❌       | ![aqua](https://img.shields.io/badge/-%20%20%20%20-55FFFF?labelColor=55FFFF&color=55FFFF) aqua                 |
+| `7`  | `Cute`           | ✅       | ![light_purple](https://img.shields.io/badge/-%20%20%20%20-FF55FF?labelColor=FF55FF&color=FF55FF) light_purple |
+| `8`  | `Discord`        | ❌       | ![blue](https://img.shields.io/badge/-%20%20%20%20-5555FF?labelColor=5555FF&color=5555FF) blue                 |
+| `9`  | `Discovering...` | ✅       | ![dark_green](https://img.shields.io/badge/-%20%20%20%20-00AA00?labelColor=00AA00&color=00AA00) dark_green     |
+| `10` | `Event`          | ❌       | ![light_purple](https://img.shields.io/badge/-%20%20%20%20-FF55FF?labelColor=FF55FF&color=FF55FF) light_purple |
+| `11` | `Farming`        | ❌       | ![gold](https://img.shields.io/badge/-%20%20%20%20-FFAA00?labelColor=FFAA00&color=FFAA00) gold                 |
+| `12` | `NoNether`       | ❌       | ![dark_red](https://img.shields.io/badge/-%20%20%20%20-AA0000?labelColor=AA0000&color=AA0000) dark_red         |
+| `13` | `PvP`            | ❌       | ![dark_red](https://img.shields.io/badge/-%20%20%20%20-AA0000?labelColor=AA0000&color=AA0000) dark_red         |
+| `14` | `Recording`      | ❌       | ![red](https://img.shields.io/badge/-%20%20%20%20-FF5555?labelColor=FF5555&color=FF5555) red                   |
+| `15` | `Redstone`       | ✅       | ![red](https://img.shields.io/badge/-%20%20%20%20-FF5555?labelColor=FF5555&color=FF5555) red                   |
+| `16` | `RP`             | ❌       | ![yellow](https://img.shields.io/badge/-%20%20%20%20-FFFF55?labelColor=FFFF55&color=FFFF55) yellow             |
+| `17` | `Streaming`      | ❌       | ![dark_purple](https://img.shields.io/badge/-%20%20%20%20-AA00AA?labelColor=AA00AA&color=AA00AA) dark_purple   |
+| `18` | `SUS`            | ❌       | ![dark_aqua](https://img.shields.io/badge/-%20%20%20%20-00AAAA?labelColor=00AAAA&color=00AAAA) dark_aqua       |
+| `19` | `Vibing`         | ❌       | ![dark_green](https://img.shields.io/badge/-%20%20%20%20-00AA00?labelColor=00AA00&color=00AA00) dark_green     |
+| `20` | `Fishing`        | ❌       | ![dark_aqua](https://img.shields.io/badge/-%20%20%20%20-00AAAA?labelColor=00AAAA&color=00AAAA) dark_aqua       |
+| `21` | `Mapping`        | ❌       | ![green](https://img.shields.io/badge/-%20%20%20%20-55FF55?labelColor=55FF55&color=55FF55) green               |
 
 To clear your status, run `/trigger Status set 100`
 
